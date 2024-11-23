@@ -23,13 +23,13 @@ body{
     z-index: 1000;
 
     position: fixed;
-    --icon-toggle-menu: url("/img/menuu.png");
+    --icon-toggle-menu: url("img/menuu.png");
     --transform-menu-show: translate(-100%);
 }
 
 .nav_contenedor:has(.nav_input:checked)
 {
-    --icon-toggle-menu: url("/img/menuu.png");
+    --icon-toggle-menu: url("img/menuu.png");
     --transform-menu-show: translate(0%);
 }
 
