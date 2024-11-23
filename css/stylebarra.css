@@ -17,7 +17,7 @@ body {
 
 .nav_contenedor {
     background-color: black;
-    width: min(100%, 1600px);
+    width: min(100%, 100%);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -93,6 +93,9 @@ body {
     padding: 0.5rem 0.8rem;
     margin-right: 50px;
 }
+
+
+
 
 @media screen and (max-width: 480px) {
     /*Estilos para moviles */

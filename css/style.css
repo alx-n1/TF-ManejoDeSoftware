@@ -1,9 +1,17 @@
+body {
+    margin-bottom: 50px; /* Ajusta el valor dependiendo de la altura del footer */
+}
+html, body {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+    height: 100%; /* Ocupa toda la altura de la ventana */
+}
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black; /* Ajusta el color si es necesario */
+    background-color: black; 
 }
 
 .nav_titular {
@@ -13,7 +21,7 @@
     font-size: 50px;
     text-align: center;
     line-height: 200px;
-    overflow: hidden; /* Asegura que el vídeo no se salga del contenedor */
+    overflow: hidden; 
 }
 
 .nav_titular #video-fondo {
@@ -46,7 +54,57 @@
     text-decoration: none;
     padding: 1.5rem 1.8rem;
 }
+.introduccion{
+    position: relative;
+    height: 16rem;
+    
 
+    
+}
+#fondo_juego1 {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.info {
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    text-align: center; 
+}
+.texto_introductorio {
+    position: absolute; 
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    font-size: 1rem;
+    color: white;
+    text-align: center; 
+    
+}
+.pie_pagina {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(5px); 
+    color: white;
+    font-size: 1rem; 
+    text-align: center;
+    padding: 15px; 
+    line-height: 1.5; 
+    border-top: 2px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+}
 @media screen and (max-width: 480px) {
     /*Estilos para moviles */
     .nav_titular {
@@ -71,6 +129,35 @@
     #button {
         padding: 10px;
         font-size: 15px;
+    }
+    .introduccion{
+        height: 30rem;
+    }
+    .info {
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .texto_introductorio {
+        font-size: 0.9rem;
+    }
+    .pie_pagina {
+        background-color: rgba(0, 0, 0, 0.85); 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 16px; 
+        line-height: 1.5; 
+        backdrop-filter: blur(5px); 
+        border-top: 2px solid rgba(255, 255, 255, 0.3); 
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+        width: 100%; 
+        position: relative; 
+
+    }
+    
+    .pie_pagina {
+        font-size: 6px;
+        
     }
 }
 
@@ -100,6 +187,11 @@
         font-size: 25px;
         
     }
+    .pie_pagina {
+        font-size: 9px;
+        
+    }
+
 
 }
 
@@ -128,5 +220,14 @@
         font-size: 30px;
         border-right: 10px;
         
+    }
+    .introduccion{
+        height: 40rem;
+    }
+    .info {
+        font-size: 3rem;
+    }
+    .texto_introductorio {
+        font-size: 2rem;
     }
 }
