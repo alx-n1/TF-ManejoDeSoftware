@@ -161,7 +161,7 @@ a{
         border: 1px solid black;
         width: 400px;
         height: 500px;
-        background-image: url("/img/debugginNinjasLog2.png");
+        background-image: url("img/debugginNinjasLog2.png");
         background-size: cover; 
         background-position: center; 
         color: white;
@@ -230,7 +230,7 @@ a{
         border: 1px solid black;
         width: 700px;
         height: 600px;
-        background-image: url("/img/debugginNinjasLog2.png");
+        background-image: url("img/debugginNinjasLog2.png");
         background-size: cover; 
         background-position: center; 
         color: white;
