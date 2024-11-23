@@ -93,9 +93,49 @@ body{
     text-decoration: none;
     padding: 0.5rem 0.8rem;
     
+    margin-right: 50px;
+}
+@media screen and (max-width: 480px)
+{
+    /*Estilos para moviles */
+    .nav_list{
+        font-size: 25px;
+        
+    }
+    .button{
+        font-size: 25px;
+        margin-right: 20px;
+        line-height: 4rem;
+
+    }
+
 }
 
-@media (width > 764px){
+@media screen and (min-width: 481px) and (max-width: 768px) 
+{
+    /*Estilos para tablets*/
+    .nav_contenedor{
+        --transform-menu-show: translate(0);
+    }
+    .nav_toggle{
+        display: none;
+    }
+    .nav_list{
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        padding: 0;
+        transition: unset;}
+    .button 
+    {
+            padding: 5px 10px; 
+            white-space: nowrap; 
+            
+        }
+    
+}
+
+@media screen and (min-width: 769px) {
     .nav_contenedor{
         --transform-menu-show: translate(0);
     }
@@ -109,4 +149,9 @@ body{
         padding: 0;
         transition: unset;
     }
+    .button 
+    {
+            padding: 5px 10px; /* Cambia según lo necesario */
+            white-space: nowrap; /* Evita que el texto del botón se corte */
+        }
 }
