@@ -54,14 +54,14 @@
     }
 
     .nav_titulo {
-        font-size: 35px;
+        font-size: 25px;
         line-height: 110%;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 90px;
     }
 
     .subtitulo {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 150%;
         text-align: center;
         padding: 0% 1%;
@@ -70,6 +70,7 @@
 
     #button {
         padding: 10px;
+        font-size: 20px;
     }
 }
 
