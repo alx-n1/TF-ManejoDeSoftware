@@ -63,14 +63,14 @@
     .subtitulo {
         font-size: 15px;
         line-height: 150%;
-        text-align: center;
-        padding: 0% 1%;
+        
+        
         margin-top: 50px;
     }
 
     #button {
         padding: 10px;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -80,6 +80,34 @@
         height: 100vh;
     }
 
+    .nav_titulo {
+        font-size: 60px;
+        line-height: 110%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        line-height: 110%;
+        text-align: center;
+        padding: 0% 1%;
+        margin-top: 30px;
+    }
+
+    #button {
+        padding: 3% 2%;
+        font-size: 25px;
+        
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    /*Estilo para PC*/
+    .nav_titular {
+        height: 100vh;
+    }
     .nav_titulo {
         font-size: 60px;
         line-height: 110%;
@@ -96,16 +124,9 @@
     }
 
     #button {
-        padding: 3% 2%;
-        font-size: 40px;
+        padding: 18px;
+        font-size: 30px;
+        border-right: 10px;
         
-    }
-
-}
-
-@media screen and (min-width: 769px) {
-    /*Estilo para PC*/
-    .nav_titular {
-        height: 100vh;
     }
 }

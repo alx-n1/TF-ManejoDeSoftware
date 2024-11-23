@@ -1,18 +1,21 @@
-*,  ::after, ::before{
+*, ::after, ::before {
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav_logo{
+
+.nav_logo {
     width: 40%;
 }
-.nave{
+
+.nave {
     background-color: rgb(0, 0, 0);
 }
 
-.nav_contenedor{
+.nav_contenedor {
     background-color: black;
     width: min(100%, 1600px);
     margin: 0 auto;
@@ -21,25 +24,22 @@ body{
     justify-content: space-between;
     height: 80px;
     z-index: 1000;
-
     position: fixed;
     --icon-toggle-menu: url("../img/menuu.png");
     --transform-menu-show: translate(-100%);
 }
 
-.nav_contenedor:has(.nav_input:checked)
-{
+.nav_contenedor:has(.nav_input:checked) {
     --icon-toggle-menu: url("../img/menuu.png");
     --transform-menu-show: translate(0%);
 }
 
-.nav_input{
-    
+.nav_input {
     width: 40px;
     height: 40px;
 }
 
-.nav_list{
+.nav_list {
     transform: var(--transform-menu-show);
     position: fixed;
     inset: 0;
@@ -47,43 +47,42 @@ body{
     place-content: center;
     text-align: center;
     font-weight: bold;
-    gap: 2rem ;
+    gap: 2rem;
     padding: 1.5rem 5%;
     background-color: black;
     list-style: none;
-    
-    
-    
-    
     transition: .5s transform;
 }
-.nav_figura, .nav_toggle{
-    z-index: 10;
 
+.nav_figura, .nav_toggle {
+    z-index: 10;
 }
-.nav_input{
+
+.nav_input {
     display: none;
 }
-.nav_toggle{
+
+.nav_toggle {
     width: 40px;
     height: 30px;
     background-image: var(--icon-toggle-menu);
-
     background-size: cover;
     cursor: pointer;
-
     transition: background-image .5s;
     margin-right: 20px; /* Ajusta el valor según sea necesario */
 }
-.nav_input{
+
+.nav_input {
     width: 40px;
     height: 40px;
 }
-.nav_link{
+
+.nav_link {
     color: white;
     text-decoration: none;
 }
-.button{
+
+.button {
     background-color: yellow;
     border-radius: 10%;
     height: 30%;
@@ -92,66 +91,57 @@ body{
     border-color: rgba(255, 255, 0, 0.67);
     text-decoration: none;
     padding: 0.5rem 0.8rem;
-    
     margin-right: 50px;
 }
-@media screen and (max-width: 480px)
-{
+
+@media screen and (max-width: 480px) {
     /*Estilos para moviles */
-    .nav_list{
+    .nav_list {
         font-size: 25px;
-        
     }
-    .button{
+
+    .button {
         font-size: 25px;
         margin-right: 20px;
         line-height: 4rem;
-
     }
-
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) 
-{
+@media screen and (min-width: 481px) and (max-width: 768px) {
     /*Estilos para tablets*/
-    .nav_contenedor{
-        --transform-menu-show: translate(0);
+    .nav_list {
+        font-size: 25px;
     }
-    .nav_toggle{
-        display: none;
+
+    .button {
+        font-size: 30px;
+        margin-right: 10px;
+        line-height: 4rem;
+        padding: 5px 10px;
+        white-space: nowrap;
     }
-    .nav_list{
-        position: static;
-        grid-auto-flow: column;
-        place-content: unset;
-        padding: 0;
-        transition: unset;}
-    .button 
-    {
-            padding: 5px 10px; 
-            white-space: nowrap; 
-            
-        }
-    
 }
 
 @media screen and (min-width: 769px) {
-    .nav_contenedor{
+    .nav_contenedor {
         --transform-menu-show: translate(0);
     }
-    .nav_toggle{
+
+    .nav_toggle {
         display: none;
     }
-    .nav_list{
+
+    .nav_list {
         position: static;
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
         transition: unset;
     }
-    .button 
-    {
-            padding: 5px 10px; /* Cambia según lo necesario */
-            white-space: nowrap; /* Evita que el texto del botón se corte */
-        }
+
+    .button {
+        padding: 5px 10px; /* Cambia según lo necesario */
+        white-space: nowrap; /* Evita que el texto del botón se corte */
+        margin-right: 20px;
+    }
 }
