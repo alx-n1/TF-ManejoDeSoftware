@@ -1,5 +1,10 @@
+html {
+
+	font-family: 'Poppins', Arial, sans-serif;
+}
+
 body {
-    margin-bottom: 50px; /* Ajusta el valor dependiendo de la altura del footer */
+    margin-bottom: 50px; 
 }
 html, body {
     margin: 0;
@@ -44,7 +49,7 @@ h2{
     background-size: cover;
     background-position: center;
     height: auto;
-    width: 65rem;
+    width: 100%;
     margin-left: 50%;
     transform: translate(-50%);
     border-color: yellow;
@@ -62,22 +67,10 @@ p {
     font-size: 1.2rem;
     margin-left: 50%;
     transform: translate(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    backdrop-filter: blur(0.1rem); /* Aplicar blur al fondo */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(0.1rem); 
+    border-radius: 10px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .pie_pagina {
@@ -94,6 +87,16 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+h2{
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+p {
+    margin-top: 1.3rem;
+    padding: 1.4rem 1rem;
+    font-size: 0.8rem;
+}
+
 }
 
 
@@ -107,6 +110,21 @@ p {
 
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .seccion{
+        margin-top: 8rem;
+    }
+    h2{
+
+    margin-top: 4%;
+    font-size: 1.5rem;
+
+    }
+    p {
+        margin-top: 1.9rem;
+        padding: 2.7rem 1.3rem;
+        font-size: 1rem;
+    }
+
 
     .pie_pagina {
         font-size: 9px;
@@ -115,6 +133,9 @@ p {
 }
 
 @media screen and (min-width: 769px) {
+    .seccion{
+        margin-top: 7.5rem;
+    }
 
     .pie_pagina {
         font-size: 1rem;

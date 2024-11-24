@@ -1,7 +1,10 @@
 body {
     margin-bottom: 50px; /* Ajusta el valor dependiendo de la altura del footer */
 }
+html {
 
+	font-family: 'Poppins', Arial, sans-serif;
+}
 html, body {
     margin: 0;
     padding: 0;
