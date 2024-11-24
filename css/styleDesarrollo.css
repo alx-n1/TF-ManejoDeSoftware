@@ -24,7 +24,7 @@ html, body {
     top: 0;
     left: 0;
     position: fixed;
-    filter: brightness(50%);
+    filter: brightness(80%);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -34,44 +34,59 @@ html, body {
 }
 
 
-.seccion {
+
+
+.content > form{
+    border-radius: 8px;
     width: 100%;
+    height: auto;
+    margin: 1%;
+    
+}
+.content {
+    
     margin-top: 3rem;
     margin-bottom: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 32px;
+    
+}
+form{
+    background-color: rgba(7, 125, 121, 0.5);
+    backdrop-filter: blur(0.1rem);
+    border-radius: 10px;
 }
 
 hr {
     width: 50%;
-    margin-left: 50%;
+    text-align: center;
     transform: translate(-50%);
 }
 
 h2 {
     margin-top: 5%;
-    background-image: url('/img/fondo.png');
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: 100%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    border-color: yellow;
-    border-radius: 10px;
-    color: yellow;
-    font-size: 2.rem;
+    color: rgb(17, 0, 255);
+    font-weight: bold;
     text-align: center;
+    font-size: 2rem;
+    
+}
+a{
+    text-decoration: none;
+    color: yellow;
 }
 
 p {
     color: white;
-    text-align: center;
+    width: auto;
+    
     padding: 1rem;
     font-size: 1.2rem;
-    margin-left: 50%;
-    transform: translate(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.1rem);
-    border-radius: 10px;
+    margin-left: 2%;
+
 }
 
 .pie_pagina {
@@ -88,17 +103,21 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-    .seccion {
-        margin-top: 5rem;
+    .content {
+        margin-top: 10rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
     }
     h2 {
+        text-align: center;
         margin-top: 4rem;
         font-size: 1rem;
     }
     p {
+        
         margin-top: 3%;
-        padding: 1.4rem 1rem;
-        font-size: 0.8rem;
+        padding: auto, auto;
+        font-size: 0.5rem;
     }
     .pie_pagina {
         font-size: 6px;
@@ -106,8 +125,10 @@ p {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .seccion {
-        margin-top: 10.1rem;
+    .content {
+        margin-top: 10rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
     }
     h2 {
         margin-top: 4%;
@@ -124,7 +145,7 @@ p {
 }
 
 @media screen and (min-width: 769px) {
-    .seccion {
+    .content {
         margin-top: 10rem;
     }
     .pie_pagina {
