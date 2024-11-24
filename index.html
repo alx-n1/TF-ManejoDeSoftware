@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stylebarra.css">
     <link rel="stylesheet" href="css/style.css">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>home</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav_contenedor">
-            <figure class="nav_figura">
-                <img src="img/logoSinFondo.png" alt="error" class="nav_logo"> 
-            </figure>
+    <div class="main-container">
 
-            <label class="nav_toggle">
-                <input type="checkbox" id="menu-input" class="nav_input">
-            </label>
 
-            <ul class="nav_list">
-                <li class="nav_item"><a href="#" class="nav_link">Noticias</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Desarrollo</a></li>
-                <li class="nav_item"><a href="https://github.com/alx-n1/proyecto_final_programaci-n_I" class="nav_link" target="_blank">Github proyecto</a></li>
-                <li class="nav_item"><a href="https://github.com/alx-n1/TF-ManejoDeSoftware" class="nav_link" target="_blank">Github pagina</a></li>
-                <li class="nav_item"><a href="login.html" class="button">Log In</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="nav_titular">
-        <form class="nav_inicial">
-            <video autoplay muted loop id="video-fondo" src="fondo/fondo1.mp4"></video>
+        <nav class="nav">
+            <div class="nav_contenedor">
+                <figure class="nav_figura">
+                    <img src="img/logoSinFondo.png" alt="error" class="nav_logo"> 
+                </figure>
+                <label class="nav_toggle">
+                    <input type="checkbox" id="menu-input" class="nav_input">
+                </label>
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#" class="nav_link">Noticias</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Desarrollo</a></li>
+                    <li class="nav_item"><a href="https://github.com/alx-n1/proyecto_final_programaci-n_I" class="nav_link" target="_blank">Github proyecto</a></li>
+                    <li class="nav_item"><a href="https://github.com/alx-n1/TF-ManejoDeSoftware" class="nav_link" target="_blank">Github pagina</a></li>
+                    <li class="nav_item"><a href="login.html" class="button">Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav_titular">
+            <form class="nav_inicial">
+                <video autoplay muted loop id="video-fondo" src="fondo/fondo1.mp4"></video>
                 <h2 class="nav_titulo">DEBUGGIN NINJA PROJECT</h2>
                 <h1 class="subtitulo">DESTRUYE LOS INVASORES O ELLOS TE DESTRUIRAN A TI</h1>
                 <a href="index.html" id="button">JUEGA YA!</a>
-        </form>
-    </div>
-    <div class="introduccion" >
-        <img src="img/juego1.png" alt="error_img" id="fondo_juego1">
-        <h2 class="info">ESTADO ACTUAL DEL JUEGO</h2>
-        <p class="texto_introductorio">
-            Actualmente el juego esta en open beta, se estan implementando activamente cambios para poder hacer que 
-            el juego se más adictivo para los usuarios.
+            </form>
+        </div>
+        <div class="introduccion">
+            <img src="img/juego1.png" alt="error_img" id="fondo_juego1">
+            <h2 class="info">ESTADO ACTUAL DEL JUEGO</h2>
+            <p class="texto_introductorio">
+                Actualmente el juego está en beta cerrada. Se están implementando cambios para hacerlo más adictivo y agregar más contenido para que 
+                nuestros jugadores puedan disfrutar de un juego que puedan disfrutar durante mucho más tiempo.
+                
+                Este juego es un proyecto final de la materia de Programación I
 
-            Se tiene previsto que el juego pueda ser lanzado a finales de este año
-        </p>
-    </div>
-    <div>
-        <footer class="pie_pagina">
-            &copy; 2024 Debugging Ninja Project. Todos los derechos reservados.
-                Algunas imágenes, música y otros recursos utilizados en este proyecto
-                están protegidos por derechos de autor de sus respectivos propietarios.
-            
-        </footer>
+                La página que están viendo actualmente es un proyecto final de la materia de Manejo de Software
+            </p>
+        </div>
+        <div class="content_actual">
+            <img src="img/fodno_selec_level.png" alt="error_img" id="fondo_juego2">
+            <h2 class="info_contenido">CONTENIDO ACTUAL</h2>
+            <p class="texto_contenido"> 
+                Actualmente el juego cuenta con un nivel con 3 oleadas y un jefe final
+                el jefe es una entidad la cual tiene mucho aguante, mucha velocidad y mucho daño
+                se espera tener dentro de poco tiempo una actualización que traera nuevos niveles, nuevos retos, nuevos enemigos
+                y muchas cosas más
+            </p>
+            <form>
+                <video src="./videos/video_muestra.mkv" class="videos_galeria" loop controls>
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
+
+    <footer class="pie_pagina">
+        &copy; 2024 Debugging Ninja Project. Todos los derechos reservados.
+        Algunas imágenes, música y otros recursos utilizados en este proyecto
+        están protegidos por derechos de autor de sus respectivos propietarios.
+    </footer>
 </body>
 </html>
