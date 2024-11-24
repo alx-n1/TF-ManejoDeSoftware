@@ -74,7 +74,7 @@ h2 {
     font-size: 2rem;
     
 }
-a{
+.referencias {
     text-decoration: none;
     color: yellow;
 }
@@ -89,6 +89,32 @@ p {
 
 }
 
+.slider_img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: 50vh;
+    max-width: 100%;
+    box-sizing: border-box;
+ 
+}
+.video_fondo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: 30vh;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+
+ 
+    
+    box-sizing: border-box;
+}
 .pie_pagina {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
@@ -119,6 +145,22 @@ p {
         padding: auto, auto;
         font-size: 0.5rem;
     }
+    .video_fondo {
+        margin-left: 50%;
+        transform: translate(-50%);
+        height: 12vh;
+        max-width: 100%;
+        box-sizing: border-box;
+        
+    }
+    
+    .slider_img {
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translate(-50%);
+        height: 20vh;
+    }
+
     .pie_pagina {
         font-size: 6px;
     }
@@ -138,6 +180,18 @@ p {
         margin-top: 1.9rem;
         padding: 2.7rem 1.3rem;
         font-size: 1rem;
+    }
+    .video_fondo {
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translate(-50%);
+        height: auto;
+    }
+    .slider_img {
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translate(-50%);
+        height: 20vh;
     }
     .pie_pagina {
         font-size: 9px;
