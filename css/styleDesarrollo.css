@@ -52,6 +52,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     gap: 32px;
+    font-weight: normal; 
     
 }
 form{
@@ -64,6 +65,7 @@ hr {
     width: 50%;
     text-align: center;
     transform: translate(-50%);
+    
 }
 
 h2 {
@@ -90,29 +92,23 @@ p {
 }
 
 .slider_img {
-    margin-top: 1rem;
+    
     margin-bottom: 1rem;
     overflow: hidden;
     margin-left: 50%;
     transform: translate(-50%);
     height: 50vh;
+    padding: 5%;
     max-width: 100%;
     box-sizing: border-box;
  
 }
-.video_fondo{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 50%;
-    transform: translate(-50%);
-    height: 30vh;
-    overflow: hidden;
+.video_fondo {
+    width: 100%;
+    height: auto;
     max-width: 100%;
-    box-sizing: border-box;
-    
-
- 
-    
+    display: block;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 .pie_pagina {
@@ -206,4 +202,3 @@ p {
         font-size: 1rem;
     }
 }
-
