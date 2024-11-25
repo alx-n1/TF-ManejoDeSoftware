@@ -94,6 +94,16 @@ p {
     max-width: 100%;
     box-sizing: border-box;
 }
+.slider_img_sound{
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: 65vh;
+    padding: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
 .video_fondo {
     width: 100%;
@@ -102,6 +112,7 @@ p {
     display: block;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 5%;
 }
 
 .pie_pagina {
@@ -146,6 +157,9 @@ p {
         transform: translate(-50%);
         height: 20vh;
     }
+    .slider_img_sound{
+        height: 40vh;
+    }
     .pie_pagina {
         font-size: 6px;
     }
@@ -177,6 +191,9 @@ p {
         margin-left: 50%;
         transform: translate(-50%);
         height: 20vh;
+    }
+    .slider_img_sound{
+        height: 40vh;
     }
     .pie_pagina {
         font-size: 9px;
